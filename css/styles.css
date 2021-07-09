@@ -10176,8 +10176,7 @@ section.resume-section {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding-bottom: 5rem; 
 }
 section.resume-section .resume-section-content {
   width: 100%;
