@@ -369,14 +369,14 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .flex-logo-width{
-  margin:auto !important;
-  width: 100px !important;
+  margin-bottom: auto !important;
+  width: 80px !important;
   height: auto !important;
   flex-shrink: 0 !important;
 } 
 .flex-logo-height{
   margin:auto !important;
-  height: 100px !important;
+  height: 80px !important;
   width: auto !important;
   flex-shrink: 0 !important;
 } 
@@ -4383,6 +4383,7 @@ input[type=button].btn-block {
     padding-top: 1em;
     background-color: #fcfcfc;
     transition: 200ms;
+    height: calc(100% - 0.8em);
   }
 }
 @media (max-width: 574px) {
