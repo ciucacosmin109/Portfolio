@@ -1,0 +1,36 @@
+/* Hero background (profile image) + white overlay that fades on scroll */
+#hero-bg {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-image: url('../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+  transition: opacity 200ms linear;
+}
+
+#hero-overlay {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  opacity: 0; /* will be updated by JS from 0 -> 1 */
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 120ms linear;
+}
+
+/* Ensure main content stays above the hero background */
+body > .container-fluid, body > nav, body > header {
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  /* On small screens, keep the background subtler */
+  #hero-bg {
+    background-position: center top;
+    filter: brightness(0.95);
+  }
+}
